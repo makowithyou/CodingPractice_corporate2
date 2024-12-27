@@ -69,7 +69,9 @@ header div#hamburger span {
 aside {
     display: none;
 }
-
+video {
+    width: 100%;
+}
 
 
 /* 広い画面向けの CSS */
