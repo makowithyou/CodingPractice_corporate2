@@ -1,0 +1,54 @@
+/* 共通 css */
+:root {
+    --main-bg-color: #FFFFFF;
+    --sub-bg-color: #121212;
+    --font-color: #121212;
+}
+* {
+    box-sizing: border-box;
+    color: var(--font-color);
+}
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", serif;
+    margin: unset;
+}
+img {
+    display: block;
+}
+h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+    margin: unset;
+    padding: unset;
+}
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+}
+a, a:visited {
+    font-size: 14px;
+    text-decoration: none;
+}
+p.copy {
+    font-size: 12px;
+}
+div.container {
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* 狭い画面向けの CSS  */
+
+
+/* 広い画面向けの CSS */
+@media (min-width: 960px) {
+h2 {
+    font-size: 28px;
+}
+}
