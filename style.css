@@ -15,9 +15,12 @@ body {
 img {
     display: block;
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, h2, p, ul, menu {
     margin: unset;
     padding: unset;
+}
+li {
+    list-style: none;
 }
 h2 {
     font-weight: bold;
@@ -44,11 +47,37 @@ div.container {
 }
 
 /* 狭い画面向けの CSS  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+}
+header img {
+    width: 180px;
+}
+div#hamburger {
+    display: grid;
+    row-gap: 10px;
+}
+header div#hamburger span {
+    display: block;
+    background-color: var(--font-color);
+    width: 30px;
+    height: 2px;
+}
+aside {
+    display: none;
+}
+
 
 
 /* 広い画面向けの CSS */
 @media (min-width: 960px) {
 h2 {
     font-size: 28px;
+}
+header img {
+    width: 200px;
 }
 }
