@@ -1,18 +1,16 @@
 const hamburger = document.getElementById("hamburger");
-console.log(hamburger.children);
 
 hamburger.addEventListener(
     "click",
     (event) => {
-        console.log("クリックイベントが発生しました");
-        const hlines = event.target.children;
+        const hamburger_lines = event.target.children;
 
-        for (const hline of hlines) {
-            if () {
-                hline.classList.add("clicked");
+        for (const line of hamburger_lines) {
+            if (line.classList.length == 0) {
+                line.classList.add("clicked");
             } else {
+                line.classList.remove("clicked");
             }
         }
-        console.log(hlines);
     }
 );
