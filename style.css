@@ -65,7 +65,66 @@ header div#hamburger span {
     background-color: var(--font-color);
     width: 30px;
     height: 2px;
+    transition: all 1s ease;
 }
+/* ハンバーガークリックアニメーション　ここから */
+header div#hamburger span.open:first-of-type {
+    background-color: #FFFFFF;
+    animation: 1s forwards span1_open;
+}
+header div#hamburger span.close:first-of-type {
+    background-color: #000000;
+    animation: 1s forwards span1_close;
+}
+header div#hamburger span.open:nth-of-type(2) {
+    background-color: #FFFFFF;
+    opacity: 0;
+}
+header div#hamburger span.close:nth-of-type(2) {
+    background-color: #000000;
+    opacity: 1;
+}
+header div#hamburger span.open:last-of-type {
+    background-color: #FFFFFF;
+    animation: 1s forwards span3_open;
+}
+header div#hamburger span.close:last-of-type {
+    background-color: #000000;
+    animation: 1s forwards span3_close;
+}
+@keyframes span1_open {
+    0% {
+        transform: translateY(12px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(12px) rotate(-405deg);
+    }
+}
+@keyframes span1_close {
+    0% {
+        transform: translateY(12px) rotate(-405deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+@keyframes span3_open {
+    0% {
+        transform: translateY(-12px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-12px) rotate(405deg);
+    }
+}
+@keyframes span3_close {
+    0% {
+        transform: translateY(-12px) rotate(405deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+/* ハンバーガークリックアニメーション　ここまで */
 aside {
     display: none;
 }
