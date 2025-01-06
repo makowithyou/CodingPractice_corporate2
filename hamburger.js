@@ -6,6 +6,8 @@ console.log(asides);
 hamburger.addEventListener(
     "click",
     (event) => {
+        hamburger.classList.toggle("open");
+
         const hamburger_lines = event.currentTarget.children;
         for (const line of hamburger_lines) {
             if (line.classList.length == 0) {
@@ -17,7 +19,6 @@ hamburger.addEventListener(
         }
 
         for (const aside of asides) {
-            console.log(aside);
             aside.classList.toggle("open");
         }
     }
