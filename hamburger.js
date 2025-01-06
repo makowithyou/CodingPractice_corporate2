@@ -7,12 +7,11 @@ hamburger.addEventListener(
 
         for (const line of hamburger_lines) {
             if (line.classList.length == 0) {
-                line.classList.add("clicked");
                 line.classList.add("open");
-            } else if (line.classList[1] == "open") {
+            } else if (line.classList[0] == "open") {
                 line.classList.remove("open");
                 line.classList.add("close");
-            } else if (line.classList[1] == "close") {
+            } else if (line.classList[0] == "close") {
                 line.classList.remove("close");
                 line.classList.add("open");
             }
