@@ -48,22 +48,25 @@ div.container {
 
 /* 狭い画面向けの CSS  */
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 9px 18px;
+    height: 72px;
+    padding: 0 18px;
 }
 header img {
     width: 180px;
 }
-div#hamburger {
+header div#hamburger {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     cursor: pointer;
     z-index: 1;
 }
-div#hamburger.open {
+header div#hamburger.open {
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
@@ -162,6 +165,36 @@ aside ul {
 }
 video {
     width: 100%;
+    position: fixed;
+    top: 72px;
+    z-index: -1;
+}
+h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10%;
+}
+h2::before,
+h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+}
+main {
+    position: absolute;
+    top: 582px;
+    width: 100%;
+}
+main article {
+    padding-top: 80px;
+}
+main article#Examples h2 {
+    color: #FFFFFF;
+}
+main article#Examples h2::before,
+main article#Examples h2::after  {
+    background-color: #FFFFFF;
 }
 
 
