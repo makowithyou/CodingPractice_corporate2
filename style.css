@@ -14,6 +14,7 @@ body {
 }
 img {
     display: block;
+    width: 100%;
 }
 h1, h2, p, ul, menu {
     margin: unset;
@@ -174,6 +175,7 @@ h2 {
     display: flex;
     align-items: center;
     column-gap: 10%;
+    margin-bottom: 30px;
 }
 h2::before,
 h2::after {
@@ -193,8 +195,15 @@ main article#Examples h2 {
     color: #FFFFFF;
 }
 main article#Examples h2::before,
-main article#Examples h2::after  {
+main article#Examples h2::after {
     background-color: #FFFFFF;
+}
+main article#Examples .grid {
+    display: grid;
+    row-gap: 30px;
+}
+main article#Examples img {
+    border: 1px solid #FFFFFF;
 }
 
 
