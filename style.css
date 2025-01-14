@@ -269,6 +269,19 @@ main article#About p:last-of-type {
 }
 
 
+main article#Flow h2 {
+    text-align: start;
+}
+main article#Flow h2::before,
+main article#Flow h2::after {
+    background-color: var(--font-color);
+}
+main article#Flow p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
 /* 広い画面向けの CSS */
 @media (min-width: 960px) {
 h2 {
