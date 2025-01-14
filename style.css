@@ -269,16 +269,40 @@ main article#About p:last-of-type {
 }
 
 
-main article#Flow h2 {
-    text-align: start;
-}
 main article#Flow h2::before,
 main article#Flow h2::after {
     background-color: var(--font-color);
 }
-main article#Flow p {
+main article#Flow h2 + p {
+    text-align: start;
+    padding-bottom: 30px;
+}
+main article#Flow div.flow_chart {
+    position: relative;
+    display: grid;
+    row-gap: 30px;
+}
+main article#Flow div.flow_chart::before {
+    content: "";
+    background-color: #FFDD00;
+    z-index: -1;
+    position: absolute;
+    right: 50%;
+    transform: translateX(25px);
+    width: 50px;
+    height: 95%;
+}
+main article#Flow div.flow_chart p {
     font-size: 14px;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #414141;
+    padding: 30px 0;
+}
+main article#Flow div.flow_chart div.triangle  {
+    background-color: #414141;
+    height: 30px;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
 }
 
 
