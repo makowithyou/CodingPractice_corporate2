@@ -262,27 +262,12 @@ main article#About a::after {
     position: absolute;
     width: 100%;
     aspect-ratio: 1 / 1;
+    transition: all 0.5s ease-out;
     background-color: rgb(255 255 255 / 20%);
-    animation: 1s forwards slide_bg_RtoL;
+    transform: translateX(-100%);
 }
 main article#About a:hover::after {
-    animation: 0.5s slide_bg_LtoR;
-}
-@keyframes slide_bg_LtoR {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-@keyframes slide_bg_RtoL {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+    transform: translateX(0);
 }
 main article#About p:first-of-type {
     color: #ffffff;
