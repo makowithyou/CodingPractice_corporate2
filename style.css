@@ -320,6 +320,44 @@ main article#Flow div.flow_chart div.triangle  {
     height: 30px;
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
 }
+main article#Flow ol.flow_details {
+    margin-top: 50px;
+    counter-reset: li;
+    display: grid;
+    row-gap: 43px;
+}
+main article#Flow ol.flow_details li {
+    position: relative;
+}
+main article#Flow ol.flow_details li:before {
+    counter-increment: li;
+    content: counter(li);
+    position: absolute;
+    left: -40px;
+    background-color: #414141;
+    color: #ffffff;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main article#Flow ol.flow_details p:first-of-type {
+    font-size: 20px;
+    border-bottom: 1px solid var(--font-color);
+    padding-bottom: 10.5px;
+    margin-bottom: 10px;
+}
+
+main article#Contact h2::before,
+main article#Contact h2::after {
+    background-color: var(--font-color);
+}
+main article#Contact h2 + p {
+    text-align: center;
+    padding-bottom: 30px;
+}
 
 
 /* 広い画面向けの CSS */
