@@ -355,8 +355,39 @@ main article#Contact h2::after {
     background-color: var(--font-color);
 }
 main article#Contact h2 + p {
-    text-align: center;
     padding-bottom: 30px;
+}
+main article#Contact div {
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+}
+main article#Contact a {
+    border: solid 1px var(--font-color);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+main article#Contact a::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--font-color);
+    right: 4px;
+    bottom: 4px;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+main article#Contact a:hover {
+    border-width: 3px;
+}
+main article#Contact img {
+    width: 64px;
+    aspect-ratio: 1 / 1;
 }
 
 
