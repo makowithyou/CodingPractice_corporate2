@@ -188,9 +188,7 @@ h2::after {
     height: 1px;
 }
 main {
-    position: absolute;
-    top: 582px;
-    width: 100%;
+    padding-top: calc(100vh + 72px);
 }
 main article {
     padding-top: 60px;
@@ -199,7 +197,6 @@ main article {
 main article#Examples {
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
     position: relative;
-    z-index: -1;
 }
 main article#Examples h2 {
     color: #FFFFFF;
