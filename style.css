@@ -428,6 +428,34 @@ footer ul li a {
 }
 
 
+
+div#ScrollButton {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    background-color: black;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+div#ScrollButton.scrolled700 {
+    display: flex;
+}
+div#ScrollButton::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 7px;
+    background-color: #fff;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+
+
 /* 広い画面向けの CSS */
 @media (min-width: 960px) {
 h2 {
