@@ -169,7 +169,7 @@ aside ul {
     row-gap: 20px;
 }
 video {
-    height: 100vh;
+    height: calc(100vh - 72px);
     position: fixed;
     top: 72px;
     z-index: -1;
