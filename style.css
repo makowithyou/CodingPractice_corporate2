@@ -197,6 +197,7 @@ main article {
 main article#Examples {
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
     position: relative;
+    z-index: -1;
 }
 main article#Examples h2 {
     color: #FFFFFF;
