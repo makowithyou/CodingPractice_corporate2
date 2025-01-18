@@ -40,6 +40,8 @@ a, a:visited {
 }
 p.copy {
     font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
 }
 div.container {
     max-width: 900px;
@@ -350,6 +352,11 @@ main article#Flow ol.flow_details p:first-of-type {
     margin-bottom: 10px;
 }
 
+
+main article#Contact {
+    background-color: #FFFFFF;
+    padding-bottom: 120px;
+}
 main article#Contact h2::before,
 main article#Contact h2::after {
     background-color: var(--font-color);
@@ -389,6 +396,35 @@ main article#Contact a:hover {
 main article#Contact img {
     width: 64px;
     aspect-ratio: 1 / 1;
+}
+
+
+footer {
+    background-color: var(--font-color);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-bottom: 60px;
+}
+footer ul li {
+    display: flex;
+    column-gap: 20px;
+}
+footer ul li:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff;
+}
+footer ul li a {
+    color: #ffffff;
 }
 
 
