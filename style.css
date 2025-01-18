@@ -292,13 +292,13 @@ main article#Flow h2::after {
     background-color: var(--font-color);
 }
 main article#Flow h2 + p {
-    text-align: start;
     padding-bottom: 30px;
 }
 main article#Flow div.flow_chart {
     position: relative;
     display: grid;
     row-gap: 30px;
+    padding: 0 20px;
 }
 main article#Flow div.flow_chart::before {
     content: "";
@@ -364,7 +364,7 @@ main article#Contact h2::after {
 main article#Contact h2 + p {
     padding-bottom: 30px;
 }
-main article#Contact div {
+main article#Contact p + div {
     display: grid;
     row-gap: 20px;
     justify-content: center;
