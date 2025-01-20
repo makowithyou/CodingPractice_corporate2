@@ -428,6 +428,7 @@ footer ul li a {
 
 
 div#ScrollButton {
+    cursor: unset;
     width: 50px;
     aspect-ratio: 1 / 1;
     background-color: black;
@@ -444,6 +445,7 @@ div#ScrollButton {
 }
 div#ScrollButton.show {
     opacity: 1;
+    cursor: pointer;
 }
 div#ScrollButton::after {
     content: "";
