@@ -1,12 +1,28 @@
-const hamburger = document.getElementById("hamburger");
-const asides = document.getElementsByTagName("aside");
-console.log(asides);
+const Hamburger = document.getElementById("Hamburger");
+const Aside = document.getElementById("Aside");
 
-
-hamburger.addEventListener(
+// ページの読み込み時に画面サイズが960px以上ならサイドメニューを表示させる
+if (window.innerWidth >= 960) {
+    Aside.classList.add("open");
+}
+// 画面サイズが変更された時に画面サイズが960px以上ならサイドメニューを表示、
+// 960px以下なら非表示させる
+window.addEventListener(
+    "resize",
+    () => {
+        console.log(window.innerWidth);
+        if (window.innerWidth >= 960) {
+            Aside.classList.add("open");
+        } else {
+            Aside.classList.remove("open");
+        }
+    }
+);
+// ハンバーガーボタンクリック時のサイドメニューの表示・非表示
+Hamburger.addEventListener(
     "click",
     (event) => {
-        hamburger.classList.toggle("open");
+        Hamburger.classList.toggle("open");
 
         const hamburger_lines = event.currentTarget.children;
         for (const line of hamburger_lines) {
@@ -18,8 +34,6 @@ hamburger.addEventListener(
             }
         }
 
-        for (const aside of asides) {
-            aside.classList.toggle("open");
-        }
+            Aside.classList.toggle("open");
     }
 );
