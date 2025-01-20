@@ -473,6 +473,7 @@ header {
 }
 aside {
     padding: 40px 45px;
+    transition: unset;
 }
 aside h1 {
     display: block;
