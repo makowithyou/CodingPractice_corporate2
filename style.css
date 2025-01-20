@@ -490,8 +490,7 @@ aside menu, aside ul {
 video {
     top: 0;
     padding-left: 300px;
-    height :600px;
-    object-fit: cover;
+    height: auto;
 }
 main {
     padding-top: 600px;
