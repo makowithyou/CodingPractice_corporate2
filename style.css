@@ -1,7 +1,5 @@
 /* 共通 css */
 :root {
-    --main-bg-color: #FFFFFF;
-    --sub-bg-color: #121212;
     --font-color: #121212;
 }
 * {
@@ -169,7 +167,7 @@ aside ul {
     row-gap: 20px;
 }
 video {
-    height: calc(100vh - 72px);
+    height: 528px;
     position: fixed;
     top: 72px;
     z-index: -1;
@@ -188,7 +186,7 @@ h2::after {
     height: 1px;
 }
 main {
-    padding-top: calc(100vh + 72px);
+    padding-top: calc(528px + 72px);
     z-index: 0;
     position: relative;
 }
