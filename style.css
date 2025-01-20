@@ -155,11 +155,13 @@ aside {
     transition: all 0.5s;
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
 }
 aside.open {
     opacity: 1;
     transform: translateX(0px);
+}
+menu {
+    padding-bottom: 50px;
 }
 aside menu,
 aside ul {
@@ -477,6 +479,13 @@ aside h1 {
 }
 aside img {
     width: 200px;
+    padding-bottom: 38px;
+}
+menu {
+    padding-bottom: 76px;
+}
+aside menu, aside ul {
+    row-gap: 16px;
 }
 video {
     top: 0;
