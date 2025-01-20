@@ -467,10 +467,13 @@ div#ScrollButton::after {
 header {
     display: none;
 }
+aside h1 {
+    display: block;
+}
+aside img {
+    width: 200px;
+}
 h2 {
     font-size: 28px;
-}
-header img {
-    width: 200px;
 }
 }
