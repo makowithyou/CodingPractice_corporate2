@@ -479,7 +479,7 @@ aside h1 {
 }
 aside img {
     width: 200px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
 }
 menu {
     padding-bottom: 76px;
@@ -490,7 +490,8 @@ aside menu, aside ul {
 video {
     top: 0;
     padding-left: 300px;
-    height: auto;
+    height :600px;
+    object-fit: cover;
 }
 main {
     padding-top: 600px;
